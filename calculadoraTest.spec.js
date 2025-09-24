@@ -23,7 +23,13 @@ describe("Teste da calculadora com valores inteiros positivos", () => {
     });
 
     test('Deve retorna a divisão de dois valores com o divisor sendo 0', () => {
-        expect(()=> divisao(10, 0)).toThrow("Divisor inválido")
+        expect(()=> divisao(10, 0)).toThrow("Divisor inválido");
+    });
+    test('Deve retorna um erro ao enviar valores difernetes de numericos', () => {
+        expect(()=> soma('a', 'b')).toThrow("É necessário que os valores sejam numeros");
+    });
+    test('Deve retornar um erro ao enviar só 1 valor', () => {
+        expect(()=> soma(10)).toThrow("É necessário 2 valores");
     });
 })
 
