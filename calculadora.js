@@ -40,7 +40,7 @@ const divisao = (dividendo, divisor) => {
     return dividendo / divisor
 }
 
-module.exports = {
+export {
     soma,
     subtracao,
     multiplicacao,

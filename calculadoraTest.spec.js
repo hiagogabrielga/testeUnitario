@@ -1,5 +1,5 @@
-const { test, expect, describe, it } = require('@jest/globals');
-const {soma, subtracao, multiplicacao, divisao} = require("./calculadora")
+import { test, expect, describe } from '@jest/globals';
+import { soma, subtracao, divisao, multiplicacao } from './calculadora';
 describe("Teste da calculadora com valores inteiros positivos", () => {
     test('Deve retorna a soma de dois valores', () => {
         const esperado = 30
